@@ -1,8 +1,9 @@
-<h2>タイトル</h2>
-<p><%= @book.title %></p>
+<main class="show">
+<p><span class="bold">Title: </span><%= @book.title %></p>
 
-<h2>本文</h2>
-<p><%= @book.body %></p>
+<p><span class="bold">Body: </span><%= @book.body %></p>
 
-<%= link_to "edit", edit_book_path %>
-<%= link_to "back", books_path %>
+<div class="btn-field">
+  <%= link_to "Edit", edit_book_path %> | <%= link_to "Back", books_path %>
+</div>
+</main>
